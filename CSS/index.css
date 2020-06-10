@@ -1,85 +1,107 @@
-@import "forms.css";
-
-*{
-    margin : 0px;
+@import "animation.css";
+.forms{
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    margin: auto;
+    padding: 10%;
+    display: auto;
+    font-size: 28px;
+  
 }
-html{
-    scroll-behavior: smooth;
- overflow: hidden;
+.bg{
+    background-color: #e15b64;
 }
-body{
-    /* color: #E15B64;
-    color: #1B4A58; */
-    color: #000;
-    font-family: "poor richard";
-    font-size: larger;
-    
-}
-.menu{
-    position: absolute;
-    width:100%;
-    background-color: ghostwhite;
+.form__one{
+    height: 400px;
     display: flex;
-    height: 100px;
-    position: fixed;
-    border-radius: 11px;
-    box-shadow: 10px 10px 30px rgba(53, 49, 49, 0.349);
-    font-weight: 300;
-    font-size: 25px;
-}
-.mainnav{
- float: right;
- }
-.nav{
-    position: relative;
-    z-index: 1;
-    text-align: right;
-    padding-top: 5px;
-    padding-right: 2%;
-    line-height: 110px;
-    list-style-type: none;
-    display:-webkit-flex;
-    
-    font-weight: 400;
-}
- a{
-    text-decoration: none;
+    background-color: #1b4a58;
+    border: 1px solid #000;
+    border-radius: 9px;
+    box-shadow: 5px 5px 15px rgba(173, 161, 161, 0.678);
     
 }
-.menu a:visited{
-color: #000;
+.content__box{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    display: grid;
+    font-size: 33px;
+    
+    
 }
-.menu a:hover{
-    color: #e15b64;
-    /* padding-bottom: 2px; */
-    /* border-bottom: 5px solid #1B4A58; */
+.content__box .logo__cap{
+    padding: 10% 15%;
+    
 }
-.nav li{
-    float: right;
-    font-weight: 300;
-    padding:0 17px;
-    position: relative;
-    z-index: 1;
+.content__box p{
+    margin-top: -20%;
+margin-left: 20%;
+color: #e15b64;
 }
-.logo__cap{
-    width:70%;
-    float: left;
-    text-align: left;
-    padding-left: 2%;
-    margin-top: 35px;
-    display:flex;
-}
-.logo__cap img{
-    border-radius: 10px;
-}
-.logo__cap  .name{
-    margin-top: 15px;
-    margin-left: 5px;
+p a
+{
+    color : #e15b64;
 }
 
+.spiral{
+    height: 95%;
+    width: 4%;
+    background-color: transparent;
+    padding-bottom: 25px;
+    justify-content: space-around;
+}
+.spiral span{
+    display: inline-table;
+    height: 13px;
+    width:100%;
+    background-color: #fff;
+}
 
+.form__page{
+   top: 0;
+    bottom: 0;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 33px;
+    
+}
 
-
-.forms:nth-child(2),.forms:nth-child(3){
-    display: none;
+form{
+    
+    height: 100%;
+}
+form label{
+    width:100%;
+    padding: 0px;
+    line-height: 50px;
+}
+form input{
+    height: 30px;
+    width:50%;
+    font-family: "poor richard";
+    text-align: center;
+    font-size: medium;
+    outline: none;    
+}
+button{
+    margin-top: 15%;
+    margin-left: 30%;
+    width: 130px;
+    height: 45px;
+    border-radius: 5px;
+    font-size:29px;
+    font-family: "poor richard";
+    font-weight: 555;
+    color: #1b4a58;
+    border: none;
+}
+button:hover{
+    background-color: #e15b64;
+    color:#fff;
+}
+.odd:hover{
+    background-color: #1b4a58;
 }

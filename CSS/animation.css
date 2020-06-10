@@ -1,0 +1,6 @@
+.animate__animated{
+  box-shadow: inset 70px 30px 20px 70px rgba(57, 59, 66, 0.411);
+  border-left: 25px;
+  border-radius: 2px 2px 20px 70px;
+  
+}

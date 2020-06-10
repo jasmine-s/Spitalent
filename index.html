@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpiTalent</title>
+     <link rel="shortcut icon" type="logo/png"
+        href="img1.png">
     <link href="CSS/index.css" rel="stylesheet">
-
+    <script src="JS/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 </head>
 
 <body>
@@ -15,88 +19,112 @@
 
     <div class="menu">
         <div class="logo__cap">
-            <img src="img.png" href="#"/>
-            <span><a href="#">SpiTalent</a></span>
+            <img src="img1.png" href="#" height="50" width="50"/>
+            <span class="name"><a href="#">SpiTalent</a></span>
         </div>
         <div class="mainnav">
             <ul class="nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">InProgress</a></li>
+                <li><a href="#">ClubWorks</a></li>
                 <li><a href="#">JoinClub</a></li>
                 <li><a href="#">ContactUs</a></li>
             </ul>
         </div>
     </div>
-
-<div class="content">
-    <!--Home Section-->
-    <section class="home">
-        <div class="home___intro">
-            <h2>Welcome To SpiTalent</h2>
-        </div>
-    </section>
-
-    <!--InProgress Section-->
-    <section class="progress">
-        <h3>Together We <span id="highlight">Think</span></h3>
-
-        <div class="grid__three">
-            <div class="grid_item">
-                <img class="grid-img" src="img1.png" />
-                <hr>
-                <span id="highlight">Think</span>
+    <div id="book_anim">
+    <div class="forms"  id="f">
+        <div class="form__one">
+            <div class="content__box" id="book">
+                <div class="logo__cap">
+                    <img src="img1.png" href="#" height="100" width="100"/>
+                    <span class="name"><a href="#">SpiTalent</a></span>
+                  </div>
+                  <br><br> 
+                  <p id="info">Already User ?? <a href="#" onclick="login();" id="info_a"> Login Now</a></p>
+              
+                </div>
+                
+            <div class="spiral" id="spiral">
             </div>
-            <div class="grid_item">
-                <img class="grid-img" src="img1.png" />
-                <hr>
-                <span id="highlight">Build</span>
-            </div>
-            <div class="grid_item">
-                <img class="grid-img" src="img1.png" />
-                <hr>
-                <span id="highlight">Succeed</span>
+           
+     
+            <div class="form__page">
+                <form> 
+                    <label id="uname" for="uname">Username : &nbsp;</label>
+                    <input id="uname_in"type="text" required>
+                    <br>
+                    <label id="email" for="email">Mail Id  &nbsp;  &nbsp;  &nbsp;    : &nbsp;    </label>
+                    <input id="email_in" type="email" required>
+                    <br>
+                    <label id="number" for="phno">Phoneno. &nbsp;  : &nbsp;   </label>
+                    <input id="number_in" type="number" required>
+                    <br>
+                    <label id="psw" for="psw">Password &nbsp; : &nbsp;   </label>
+                    <input id="psw_in" type="password" required>
+                    <br>
+                    <button id="btn" onclick="otp();">Register</button>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!--Join Club-->
-    <section class="join__club">
-        <div class="img__with__description">
-            <img src="img4.jpg">
-            <h4>Spitalent Clubs</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                 Sint dolore aut harum quaerat porro hic ipsum, sequi alias inventore odit,
-                 suscipit cum deserunt fuga reiciendis corrupti, magni animi nesciunt dolorem!
-            </p>
+    <!--Login-->
+    <div class="forms"  id="f-1">
+        <div class="form__one"  id="fp">
+            <div class="content__box" id="book1">
+                <div class="logo__cap">
+                    <img src="img1.png" href="#" height="100" width="100"/>
+                    <span class="name"><a href="#">SpiTalent</a></span>
+                  </div>
+                  <br><br> 
+                  <p id="info">New User ?? <a href="#" onclick="reg();" id="info_a">Register Here</a></p>
+              
+                </div>
+            <div class="spiral" id="spiral_1">
+            </div>
+            <div class="form__page">
+                <form> 
+                    <label id="uname" for="uname" required>Username : &nbsp;</label>
+                    <input id="uname_in"type="text">
+                    <br>
+                   
+                    <br>
+                    <label id="psw" for="psw" required>Password &nbsp; : &nbsp;   </label>
+                    <input id="psw_in" type="password">
+                    <br>
+                    <button id="btn"class="odd" onclick="otp();">Login</button>
+                </form>
+            </div>
         </div>
-        <div class="img__with__description">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                 Sint dolore aut harum quaerat porro hic ipsum, sequi alias inventore odit,
-                 suscipit cum deserunt fuga reiciendis corrupti, magni animi nesciunt dolorem!
-            </p>
+    </div>
+
+    <!--OTP-->
+    <div class="forms"   id="f-2">
+        <div class="form__one">
+            <div class="content__box"  id="book2">
+                <div class="logo__cap">
+                    <img src="img1.png" href="#" height="100" width="100"/>
+                    <span class="name"><a href="#">SpiTalent</a></span>
+                  </div>
+                  <br><br> 
+                  <p id="info">Already User ?? <a href="#" onclick="login();" id="info_a"> Login Now</a></p>
+              
+                </div>
+            <div class="spiral" id="spiral_2">
+            </div>
+            <div class="form__page">
+                <p style="width:60%;padding-left: 22%;">Enter OTP that sent to registered mobile number and mailid</p>
+                <br>
+                <form id="handler"> 
+                    <label id="uname" for="uname">OTP : &nbsp;</label>
+                    <input id="uname_in"type="text" required>
+                    <button id="btn">Continue</button>
+                </form>
+            </div>
         </div>
-    </section">
- <!--Contact-->
-    <section  class="contact">
-        <div class="img__with__description">
-            <img src="img4.jpg">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                 Sint dolore aut harum quaerat porro hic ipsum, sequi alias inventore odit,
-                 suscipit cum deserunt fuga reiciendis corrupti, magni animi nesciunt dolorem!
-            </p>
-        </div>
-        <div class="container">
-            <form>
-                <input type="email" required>
-                <button>Subscribe</button>
-            </form>
-        </div>
-        <footer>
-            <span>SpiTalent club</span>
-            
-        </footer>
-    </section>
-</div>
+    </div>
+       </div>
+
 </body>
 
 </html>

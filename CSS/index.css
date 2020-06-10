@@ -1,0 +1,85 @@
+@import "forms.css";
+
+*{
+    margin : 0px;
+}
+html{
+    scroll-behavior: smooth;
+ overflow: hidden;
+}
+body{
+    /* color: #E15B64;
+    color: #1B4A58; */
+    color: #000;
+    font-family: "poor richard";
+    font-size: larger;
+    
+}
+.menu{
+    position: absolute;
+    width:100%;
+    background-color: ghostwhite;
+    display: flex;
+    height: 100px;
+    position: fixed;
+    border-radius: 11px;
+    box-shadow: 10px 10px 30px rgba(53, 49, 49, 0.349);
+    font-weight: 300;
+    font-size: 25px;
+}
+.mainnav{
+ float: right;
+ }
+.nav{
+    position: relative;
+    z-index: 1;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 2%;
+    line-height: 110px;
+    list-style-type: none;
+    display:-webkit-flex;
+    
+    font-weight: 400;
+}
+ a{
+    text-decoration: none;
+    
+}
+.menu a:visited{
+color: #000;
+}
+.menu a:hover{
+    color: #e15b64;
+    /* padding-bottom: 2px; */
+    /* border-bottom: 5px solid #1B4A58; */
+}
+.nav li{
+    float: right;
+    font-weight: 300;
+    padding:0 17px;
+    position: relative;
+    z-index: 1;
+}
+.logo__cap{
+    width:70%;
+    float: left;
+    text-align: left;
+    padding-left: 2%;
+    margin-top: 35px;
+    display:flex;
+}
+.logo__cap img{
+    border-radius: 10px;
+}
+.logo__cap  .name{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+
+
+
+.forms:nth-child(2),.forms:nth-child(3){
+    display: none;
+}
